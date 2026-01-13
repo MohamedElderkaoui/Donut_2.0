@@ -1,0 +1,297 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "colorsys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "colorsys",
+        "description": "colorsys",
+        "detail": "colorsys",
+        "documentation": {}
+    },
+    {
+        "label": "hsv2rgb",
+        "kind": 2,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "def hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))\n    screen.blit(text, text_rect)\nk = 0\npaused = False\nrunning = True\nwhile running:",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "text_display",
+        "kind": 2,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "def text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))\n    screen.blit(text, text_rect)\nk = 0\npaused = False\nrunning = True\nwhile running:\n    clock.tick(FPS)\n    pygame.display.set_caption(\"FPS: {:.2f}\".format(clock.get_fps()))",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "WHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nhue = 0\nos.environ['SDL_VIDEO_CENTERED'] = '1'\nRES = WIDTH, HEIGHT = 800, 800\nFPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "BLACK = (0, 0, 0)\nhue = 0\nos.environ['SDL_VIDEO_CENTERED'] = '1'\nRES = WIDTH, HEIGHT = 800, 800\nFPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "hue",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "hue = 0\nos.environ['SDL_VIDEO_CENTERED'] = '1'\nRES = WIDTH, HEIGHT = 800, 800\nFPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['SDL_VIDEO_CENTERED']",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "os.environ['SDL_VIDEO_CENTERED'] = '1'\nRES = WIDTH, HEIGHT = 800, 800\nFPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "RES",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "RES = WIDTH, HEIGHT = 800, 800\nFPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "FPS = 60\npixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "pixel_width",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "pixel_width = 20\npixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "pixel_height",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "pixel_height = 20\nx_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "x_pixel",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "x_pixel = 0\ny_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "y_pixel",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "y_pixel = 0\nscreen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "screen_width",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "screen_width = WIDTH // pixel_width\nscreen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "screen_height",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "screen_height = HEIGHT // pixel_height\nscreen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "screen_size",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "screen_size = screen_width * screen_height\nA, B = 0, 0\ntheta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "theta_spacing",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "theta_spacing = 10\nphi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "phi_spacing",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "phi_spacing = 3\nchars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "chars",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "chars = \".,-~:;=!*#$@\"\nR1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "R1",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "R1 = 10\nR2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "R2",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "R2 = 20\nK2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "K2",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "K2 = 200\nK1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "K1",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "K1 = screen_height * K2 * 3 / (8 * (R1 + R2))\npygame.init()\nscreen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "screen = pygame.display.set_mode(RES)\nclock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))\n    screen.blit(text, text_rect)\nk = 0",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "clock = pygame.time.Clock()\nfont = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))\n    screen.blit(text, text_rect)\nk = 0\npaused = False",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "font",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "font = pygame.font.SysFont('Arial', 20, bold=True)\ndef hsv2rgb(h, s, v):\n    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))\ndef text_display(char, x, y):\n    text = font.render(str(char), True, hsv2rgb(hue, 1, 1))\n    text_rect = text.get_rect(center=(x, y))\n    screen.blit(text, text_rect)\nk = 0\npaused = False\nrunning = True",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "k = 0\npaused = False\nrunning = True\nwhile running:\n    clock.tick(FPS)\n    pygame.display.set_caption(\"FPS: {:.2f}\".format(clock.get_fps()))\n    screen.fill(BLACK)\n    output = [' '] * screen_size\n    zbuffer = [0] * screen_size\n    for theta in range(0, 628, theta_spacing):  # theta goes around the cross-sectional circle of a torus, from 0 to 2pi",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "paused",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "paused = False\nrunning = True\nwhile running:\n    clock.tick(FPS)\n    pygame.display.set_caption(\"FPS: {:.2f}\".format(clock.get_fps()))\n    screen.fill(BLACK)\n    output = [' '] * screen_size\n    zbuffer = [0] * screen_size\n    for theta in range(0, 628, theta_spacing):  # theta goes around the cross-sectional circle of a torus, from 0 to 2pi\n        for phi in range(0, 628, phi_spacing):  # phi goes around the center of revolution of a torus, from 0 to 2pi",
+        "detail": "donut",
+        "documentation": {}
+    },
+    {
+        "label": "running",
+        "kind": 5,
+        "importPath": "donut",
+        "description": "donut",
+        "peekOfCode": "running = True\nwhile running:\n    clock.tick(FPS)\n    pygame.display.set_caption(\"FPS: {:.2f}\".format(clock.get_fps()))\n    screen.fill(BLACK)\n    output = [' '] * screen_size\n    zbuffer = [0] * screen_size\n    for theta in range(0, 628, theta_spacing):  # theta goes around the cross-sectional circle of a torus, from 0 to 2pi\n        for phi in range(0, 628, phi_spacing):  # phi goes around the center of revolution of a torus, from 0 to 2pi\n            cosA = cos(A)",
+        "detail": "donut",
+        "documentation": {}
+    }
+]
